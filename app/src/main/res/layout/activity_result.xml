@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical"
+            android:layout_marginBottom="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark Mode"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResultName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_primary"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:textSize="16sp"
+            android:textColor="?android:textColorSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="48dp"/>
+
+        <Button
+            android:id="@+id/btnTakeNewQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Take New Quiz"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/blue_primary"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Finish"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_primary"/>
+
+    </LinearLayout>
+</ScrollView>

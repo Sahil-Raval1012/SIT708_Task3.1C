@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Progress bar track in dark mode -->
+    <color name="progress_bg">#37474F</color>
+</resources>

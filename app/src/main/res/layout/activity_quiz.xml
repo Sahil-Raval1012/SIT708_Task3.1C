@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:colorBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark Mode"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1 of 10"
+            android:textSize="13sp"
+            android:textColor="?android:textColorSecondary"
+            android:layout_marginBottom="6dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/blue_primary"
+            android:progressBackgroundTint="@color/progress_bg"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/btnOption1"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                app:strokeWidth="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/btnOption2"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                app:strokeWidth="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/btnOption3"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                app:strokeWidth="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/btnOption4"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                app:cornerRadius="8dp"
+                app:strokeWidth="1dp"/>
+
+            <TextView
+                android:id="@+id/tvFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Submit"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/blue_primary"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Next"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                android:backgroundTint="@color/green_correct"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
