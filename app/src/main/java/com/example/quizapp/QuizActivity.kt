@@ -67,7 +67,7 @@ class QuizActivity : AppCompatActivity() {
             }
         }
 
-        // Next / See Results button
+
         binding.btnNext.setOnClickListener {
             currentIndex++
             if (currentIndex < questions.size) {

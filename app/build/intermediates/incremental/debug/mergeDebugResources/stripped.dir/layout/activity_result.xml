@@ -10,23 +10,22 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:padding="28dp">
+        android:padding="30dp">
 
-        <!-- Subtask 5: Dark Mode toggle -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="end|center_vertical"
-            android:layout_marginBottom="48dp">
+            android:layout_marginBottom="50dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dark Mode"
                 android:textColor="?android:textColorSecondary"
-                android:textSize="13sp"
-                android:layout_marginEnd="8dp"/>
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"/>
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchTheme"
@@ -35,59 +34,55 @@
 
         </LinearLayout>
 
-        <!-- Subtask 3: "Congratulations, [name]!" — matches wireframe -->
         <TextView
             android:id="@+id/tvResultName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="24sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="?android:textColorPrimary"
             android:gravity="center"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="36dp"/>
 
-        <!-- Score as fraction e.g. "7 / 10" -->
         <TextView
             android:id="@+id/tvScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="64sp"
+            android:textSize="60sp"
             android:textStyle="bold"
             android:textColor="@color/blue_primary"
             android:gravity="center"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your Score"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textColor="?android:textColorSecondary"
             android:gravity="center"
-            android:layout_marginBottom="48dp"/>
+            android:layout_marginBottom="50dp"/>
 
-        <!-- Subtask 3: Take New Quiz — returns to main screen, name retained -->
         <Button
             android:id="@+id/btnTakeNewQuiz"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="60dp"
             android:text="Take New Quiz"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="15dp"
             android:backgroundTint="@color/blue_primary"/>
 
-        <!-- Subtask 3: Finish — closes the app entirely -->
         <Button
             style="@style/Widget.AppCompat.Button.Borderless"
             android:id="@+id/btnFinish"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="60dp"
             android:text="Finish"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/blue_primary"/>
 
